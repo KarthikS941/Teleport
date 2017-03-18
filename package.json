@@ -1,0 +1,44 @@
+{
+    "name": "teleport",
+    "description": "Teleport module gets logs from a remote iOS device. Helps debugging easier.",
+    "version": "0.1.0",
+    "author": {
+        "name": "Karthik Sankar",
+        "email": "karthiksbootup@gmail.com"
+    },
+    "contributors" :[
+        {
+            "name": "Karthik Sankar",
+            "email": "karthiksbootup@gmail.com"
+        }
+    ],
+    "license": "MIT", "repository": {
+        "type": "git",
+        "url": "https://github.com/KarthikSankar29/Teleport"
+    },
+    "homepage": "",
+    "keywords": [
+        "ios",
+        "swift",
+        "log"
+    ],
+    "dependencies": {
+        "localtunnel": "1.8.2",
+        "randomstring": "1.1.5",
+        "parse-domain": "1.1.0",
+        "cli-color": "1.2.0",
+        "node-emoji": "1.5.1",
+        "portfinder": "1.0.13"
+    },
+    "devDependencies": {
+        "localtunnel": "1.8.2",
+        "randomstring": "1.1.5",
+        "parse-domain": "1.1.0",
+        "cli-color": "1.2.0",
+        "node-emoji": "1.5.1",
+        "portfinder": "1.0.13"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    }
+}
