@@ -544,6 +544,7 @@
 				CFD34C011E89B14F00FAF902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFD34C021E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +553,7 @@
 				CFD34C041E89B14F00FAF902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFD34C051E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +562,7 @@
 				CFD34C071E89B14F00FAF902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

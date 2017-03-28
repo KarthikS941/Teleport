@@ -7,8 +7,9 @@ var randomstring = require('randomstring');         // Random String
 var parseDomain = require('parse-domain');          // Parse Domain
 var clc = require('cli-color');                     // CLI Color
 var emoji = require('node-emoji');                  // Emoticons
+var table = require('easy-table')                   // Content Table
 
-// Colors
+// Colors based on https://github.com/medikoo/cli-color
 var headerBackground = clc.xterm(39);
 var error = clc.red;
 var warn = clc.yellow;
@@ -17,10 +18,13 @@ var connectionFont = clc.xterm(3);
 var debugColor = clc.xterm(41);
 var infoColor = clc.xterm(45);
 var warningColor = clc.xterm(227);
-var errorColor = clc.xterm(198);
+var errorColor = clc.xterm(196);
+var verboseColor = clc.xterm(201);
+var tableHeader = clc.xterm(6);
 
 // Variables
 var serverPort = 8080
+var contentTable = new table
 
 /// Main Module ///
 /// Port Finder Module ///
@@ -91,11 +95,9 @@ wsServer.on('request', function(request) {
     connection.on('message', function(message) {
         if (message.type === 'utf8') {
             printLog(message.utf8Data);
-            // connection.sendUTF(message.utf8Data);
         }
         else if (message.type === 'binary') {
             console.log('Received Binary Message of ' + message.binaryData.length + ' bytes');
-            // connection.sendBytes(message.binaryData);
         }
     });
     connection.on('close', function(reasonCode, description) {
@@ -113,7 +115,85 @@ printHeader = function() {
     process.stdout.write(clc.art(header, style));
 }
 
+getLogColorFor = function(logMode) {
+    if (logMode == "Info") {
+        return infoColor
+    }
+    else if (logMode == "Warning") {
+        return warningColor
+    }
+    else if (logMode == "Error") {
+        return errorColor
+    }
+    else if (logMode == "Verbose") {
+        return verboseColor
+    }
+    else if (logMode == "Debug") {
+        return debugColor
+    }
+    else {
+        return debugColor
+    }
+}
+printEmptyTable = function() {
+
+    var loadDict = [{
+        timeStamp : "                   ",
+        logType : "    ",
+        fileName : "                         ",
+        functionName : "                            ",
+        lineNumber : "    ",
+        message : "                                     "
+    }]
+
+    console.log(tableHeader(table.print(loadDict, function(log, cell) {
+        cell('Time Stamp', log.timeStamp)
+        cell('Log Type', log.logType)
+        cell('File',log.fileName)
+        cell('Function',log.functionName)
+        cell('Line',log.lineNumber)
+        cell('Message',log.message)
+    }, function(table1) {
+        return table1.toString()
+    })));
+}
 printLog = function(logString) {
-    // Scan text
-    console.log(debugColor(logString));
+    // Check for type of log 
+    var color = debugColor
+    var logArray = logString.split("@");
+
+    if (logArray.length > 1) {
+        var timeStamp = logArray[0];        // Time Stamp
+        var logType = logArray[1];          // Log Type
+        var fileName = logArray[2];         // File Name
+        var functionName = logArray[3];     // Function Name
+        var lineNumber = logArray[4];       // Line Number
+        var message = logArray[5];          // Message
+
+        var loadDict = [{
+            timeStamp : timeStamp,
+            logType : logType,
+            fileName : fileName,
+            functionName : functionName,
+            lineNumber : lineNumber,
+            message : message
+        }]
+
+        var logColor = getLogColorFor(logType)
+
+        console.log(table.print(loadDict, function(log, cell) {
+            cell('Time Stamp', log.timeStamp)
+            cell('Log Type', logColor(log.logType))
+            cell('File',log.fileName)
+            cell('Function',log.functionName)
+            cell('Line',log.lineNumber)
+            cell('Message',message)
+        }, function(table1) {
+            return table1.print()
+        }))
+    }
+    else {
+        console.log(connectionFont(logString));
+        printEmptyTable();
+    }
 }

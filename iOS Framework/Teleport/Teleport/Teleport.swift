@@ -128,8 +128,9 @@ extension Teleport {
         let timeStamp = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short)  // Time Stamp
         
         let debugLogString = "\(timeStamp)\(logString)\(fileString)\(functionString)\(lineString)\(messageString)"
-        
-        socketWrite(message: debugLogString)            // Write to log
+        let serverDebugLogString = "\(timeStamp)@\(logType.description)@\((fileName as NSString).lastPathComponent)@\(functionName)@\(lineNumber)@\(message)"
+
+        socketWrite(message: serverDebugLogString)            // Write to server log
     }
     
 /**

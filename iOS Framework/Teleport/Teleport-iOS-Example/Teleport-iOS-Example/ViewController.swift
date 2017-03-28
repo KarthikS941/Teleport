@@ -17,7 +17,7 @@ class ViewController: UIViewController,TeleportDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tel.delegate = self
-        tel.connectWith(pin: "oe29r2oor")
+        tel.connectWith(pin: "o11pt92pr")
         
 
         
@@ -33,6 +33,7 @@ class ViewController: UIViewController,TeleportDelegate {
         tel.writeLogWith(logType: .warning, message: "test warning")
         tel.writeLogWith(logType: .error, message: "test error")
         tel.writeLogWith(logType: .verbose, message: "test verbose")
+        tel.writeLogWith(logType: .debug, message: "test debug")
     }
     
     func teleportDisconnected() {
