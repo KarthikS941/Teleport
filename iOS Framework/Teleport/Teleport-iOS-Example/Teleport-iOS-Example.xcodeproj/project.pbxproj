@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFD34BDB1E89B14F00FAF902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD34BDA1E89B14F00FAF902 /* AppDelegate.swift */; };
+		CFD34BDD1E89B14F00FAF902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD34BDC1E89B14F00FAF902 /* ViewController.swift */; };
+		CFD34BE01E89B14F00FAF902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD34BDE1E89B14F00FAF902 /* Main.storyboard */; };
+		CFD34BE21E89B14F00FAF902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD34BE11E89B14F00FAF902 /* Assets.xcassets */; };
+		CFD34BE51E89B14F00FAF902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD34BE31E89B14F00FAF902 /* LaunchScreen.storyboard */; };
+		CFD34BF01E89B14F00FAF902 /* Teleport_iOS_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD34BEF1E89B14F00FAF902 /* Teleport_iOS_ExampleTests.swift */; };
+		CFD34BFB1E89B14F00FAF902 /* Teleport_iOS_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD34BFA1E89B14F00FAF902 /* Teleport_iOS_ExampleUITests.swift */; };
+		CFD34C161E89B2C700FAF902 /* Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD34C151E89B2C700FAF902 /* Teleport.framework */; };
+		CFD34C171E89B2C700FAF902 /* Teleport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFD34C151E89B2C700FAF902 /* Teleport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFD34BEC1E89B14F00FAF902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD34BCF1E89B14E00FAF902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD34BD61E89B14F00FAF902;
+			remoteInfo = "Teleport-iOS-Example";
+		};
+		CFD34BF71E89B14F00FAF902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD34BCF1E89B14E00FAF902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD34BD61E89B14F00FAF902;
+			remoteInfo = "Teleport-iOS-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFD34C141E89B2BD00FAF902 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFD34C171E89B2C700FAF902 /* Teleport.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CFD34BD71E89B14F00FAF902 /* Teleport-iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teleport-iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD34BDA1E89B14F00FAF902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFD34BDC1E89B14F00FAF902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFD34BDF1E89B14F00FAF902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFD34BE11E89B14F00FAF902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFD34BE41E89B14F00FAF902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFD34BE61E89B14F00FAF902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD34BEB1E89B14F00FAF902 /* Teleport-iOS-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teleport-iOS-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD34BEF1E89B14F00FAF902 /* Teleport_iOS_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teleport_iOS_ExampleTests.swift; sourceTree = "<group>"; };
+		CFD34BF11E89B14F00FAF902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD34BF61E89B14F00FAF902 /* Teleport-iOS-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teleport-iOS-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD34BFA1E89B14F00FAF902 /* Teleport_iOS_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teleport_iOS_ExampleUITests.swift; sourceTree = "<group>"; };
+		CFD34BFC1E89B14F00FAF902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD34C091E89B16700FAF902 /* Teleport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Teleport.framework; path = "../build/Debug-iphoneos/Teleport.framework"; sourceTree = "<group>"; };
+		CFD34C151E89B2C700FAF902 /* Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFD34BD41E89B14F00FAF902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD34C161E89B2C700FAF902 /* Teleport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD34BE81E89B14F00FAF902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD34BF31E89B14F00FAF902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFD34BCE1E89B14E00FAF902 = {
+			isa = PBXGroup;
+			children = (
+				CFD34C151E89B2C700FAF902 /* Teleport.framework */,
+				CFD34BD91E89B14F00FAF902 /* Teleport-iOS-Example */,
+				CFD34BEE1E89B14F00FAF902 /* Teleport-iOS-ExampleTests */,
+				CFD34BF91E89B14F00FAF902 /* Teleport-iOS-ExampleUITests */,
+				CFD34BD81E89B14F00FAF902 /* Products */,
+				CFD34C081E89B16700FAF902 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD34BD81E89B14F00FAF902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFD34BD71E89B14F00FAF902 /* Teleport-iOS-Example.app */,
+				CFD34BEB1E89B14F00FAF902 /* Teleport-iOS-ExampleTests.xctest */,
+				CFD34BF61E89B14F00FAF902 /* Teleport-iOS-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFD34BD91E89B14F00FAF902 /* Teleport-iOS-Example */ = {
+			isa = PBXGroup;
+			children = (
+				CFD34BDA1E89B14F00FAF902 /* AppDelegate.swift */,
+				CFD34BDC1E89B14F00FAF902 /* ViewController.swift */,
+				CFD34BDE1E89B14F00FAF902 /* Main.storyboard */,
+				CFD34BE11E89B14F00FAF902 /* Assets.xcassets */,
+				CFD34BE31E89B14F00FAF902 /* LaunchScreen.storyboard */,
+				CFD34BE61E89B14F00FAF902 /* Info.plist */,
+			);
+			path = "Teleport-iOS-Example";
+			sourceTree = "<group>";
+		};
+		CFD34BEE1E89B14F00FAF902 /* Teleport-iOS-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD34BEF1E89B14F00FAF902 /* Teleport_iOS_ExampleTests.swift */,
+				CFD34BF11E89B14F00FAF902 /* Info.plist */,
+			);
+			path = "Teleport-iOS-ExampleTests";
+			sourceTree = "<group>";
+		};
+		CFD34BF91E89B14F00FAF902 /* Teleport-iOS-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD34BFA1E89B14F00FAF902 /* Teleport_iOS_ExampleUITests.swift */,
+				CFD34BFC1E89B14F00FAF902 /* Info.plist */,
+			);
+			path = "Teleport-iOS-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		CFD34C081E89B16700FAF902 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFD34C091E89B16700FAF902 /* Teleport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFD34BD61E89B14F00FAF902 /* Teleport-iOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD34BFF1E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-Example" */;
+			buildPhases = (
+				CFD34BD31E89B14F00FAF902 /* Sources */,
+				CFD34BD41E89B14F00FAF902 /* Frameworks */,
+				CFD34BD51E89B14F00FAF902 /* Resources */,
+				CFD34C141E89B2BD00FAF902 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Teleport-iOS-Example";
+			productName = "Teleport-iOS-Example";
+			productReference = CFD34BD71E89B14F00FAF902 /* Teleport-iOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFD34BEA1E89B14F00FAF902 /* Teleport-iOS-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD34C021E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-ExampleTests" */;
+			buildPhases = (
+				CFD34BE71E89B14F00FAF902 /* Sources */,
+				CFD34BE81E89B14F00FAF902 /* Frameworks */,
+				CFD34BE91E89B14F00FAF902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD34BED1E89B14F00FAF902 /* PBXTargetDependency */,
+			);
+			name = "Teleport-iOS-ExampleTests";
+			productName = "Teleport-iOS-ExampleTests";
+			productReference = CFD34BEB1E89B14F00FAF902 /* Teleport-iOS-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFD34BF51E89B14F00FAF902 /* Teleport-iOS-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD34C051E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-ExampleUITests" */;
+			buildPhases = (
+				CFD34BF21E89B14F00FAF902 /* Sources */,
+				CFD34BF31E89B14F00FAF902 /* Frameworks */,
+				CFD34BF41E89B14F00FAF902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD34BF81E89B14F00FAF902 /* PBXTargetDependency */,
+			);
+			name = "Teleport-iOS-ExampleUITests";
+			productName = "Teleport-iOS-ExampleUITests";
+			productReference = CFD34BF61E89B14F00FAF902 /* Teleport-iOS-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFD34BCF1E89B14E00FAF902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Karthik Sankar";
+				TargetAttributes = {
+					CFD34BD61E89B14F00FAF902 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HCZPEUR3M7;
+						ProvisioningStyle = Automatic;
+					};
+					CFD34BEA1E89B14F00FAF902 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HCZPEUR3M7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFD34BD61E89B14F00FAF902;
+					};
+					CFD34BF51E89B14F00FAF902 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HCZPEUR3M7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFD34BD61E89B14F00FAF902;
+					};
+				};
+			};
+			buildConfigurationList = CFD34BD21E89B14E00FAF902 /* Build configuration list for PBXProject "Teleport-iOS-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFD34BCE1E89B14E00FAF902;
+			productRefGroup = CFD34BD81E89B14F00FAF902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFD34BD61E89B14F00FAF902 /* Teleport-iOS-Example */,
+				CFD34BEA1E89B14F00FAF902 /* Teleport-iOS-ExampleTests */,
+				CFD34BF51E89B14F00FAF902 /* Teleport-iOS-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFD34BD51E89B14F00FAF902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD34BE51E89B14F00FAF902 /* LaunchScreen.storyboard in Resources */,
+				CFD34BE21E89B14F00FAF902 /* Assets.xcassets in Resources */,
+				CFD34BE01E89B14F00FAF902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD34BE91E89B14F00FAF902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD34BF41E89B14F00FAF902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFD34BD31E89B14F00FAF902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD34BDD1E89B14F00FAF902 /* ViewController.swift in Sources */,
+				CFD34BDB1E89B14F00FAF902 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD34BE71E89B14F00FAF902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD34BF01E89B14F00FAF902 /* Teleport_iOS_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD34BF21E89B14F00FAF902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD34BFB1E89B14F00FAF902 /* Teleport_iOS_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFD34BED1E89B14F00FAF902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD34BD61E89B14F00FAF902 /* Teleport-iOS-Example */;
+			targetProxy = CFD34BEC1E89B14F00FAF902 /* PBXContainerItemProxy */;
+		};
+		CFD34BF81E89B14F00FAF902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD34BD61E89B14F00FAF902 /* Teleport-iOS-Example */;
+			targetProxy = CFD34BF71E89B14F00FAF902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFD34BDE1E89B14F00FAF902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD34BDF1E89B14F00FAF902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFD34BE31E89B14F00FAF902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD34BE41E89B14F00FAF902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFD34BFD1E89B14F00FAF902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFD34BFE1E89B14F00FAF902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFD34C001E89B14F00FAF902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HCZPEUR3M7;
+				INFOPLIST_FILE = "Teleport-iOS-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthiksankar.Teleport-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CFD34C011E89B14F00FAF902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HCZPEUR3M7;
+				INFOPLIST_FILE = "Teleport-iOS-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthiksankar.Teleport-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CFD34C031E89B14F00FAF902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HCZPEUR3M7;
+				INFOPLIST_FILE = "Teleport-iOS-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthiksankar.Teleport-iOS-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport-iOS-Example.app/Teleport-iOS-Example";
+			};
+			name = Debug;
+		};
+		CFD34C041E89B14F00FAF902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HCZPEUR3M7;
+				INFOPLIST_FILE = "Teleport-iOS-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthiksankar.Teleport-iOS-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport-iOS-Example.app/Teleport-iOS-Example";
+			};
+			name = Release;
+		};
+		CFD34C061E89B14F00FAF902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HCZPEUR3M7;
+				INFOPLIST_FILE = "Teleport-iOS-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthiksankar.Teleport-iOS-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Teleport-iOS-Example";
+			};
+			name = Debug;
+		};
+		CFD34C071E89B14F00FAF902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HCZPEUR3M7;
+				INFOPLIST_FILE = "Teleport-iOS-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthiksankar.Teleport-iOS-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Teleport-iOS-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFD34BD21E89B14E00FAF902 /* Build configuration list for PBXProject "Teleport-iOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD34BFD1E89B14F00FAF902 /* Debug */,
+				CFD34BFE1E89B14F00FAF902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD34BFF1E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD34C001E89B14F00FAF902 /* Debug */,
+				CFD34C011E89B14F00FAF902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFD34C021E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD34C031E89B14F00FAF902 /* Debug */,
+				CFD34C041E89B14F00FAF902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFD34C051E89B14F00FAF902 /* Build configuration list for PBXNativeTarget "Teleport-iOS-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD34C061E89B14F00FAF902 /* Debug */,
+				CFD34C071E89B14F00FAF902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFD34BCF1E89B14E00FAF902 /* Project object */;
+}
