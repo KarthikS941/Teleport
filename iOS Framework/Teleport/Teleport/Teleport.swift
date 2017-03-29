@@ -51,7 +51,9 @@ public class Teleport: NSObject{
     
     var socket:WebSocket!                               // WebSocket
     let connectionProtocols = ["teleport-protocol"]     // Protocols to connect with
-    
+    var masterViewController:UIViewController!          // Master View Controller
+    var teleportView: TeleportView = .fromNib()         // Teleport View
+
     public weak var delegate: TeleportDelegate!         // Teleport Delegate
     
     private override init() {}
@@ -76,9 +78,53 @@ public class Teleport: NSObject{
     Disconnect from local server
 */
     public func disconnect() {
-        
         // Disconnect Socket
         socket.disconnect()
+    }
+    
+    public func addTeleportTo(viewController:UIViewController) {
+        self.masterViewController = viewController  // Get View Controller
+        // Add Tap Gesture
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        viewController.view.addGestureRecognizer(tap)
+        viewController.view.isUserInteractionEnabled = true
+    }
+    
+    func handleTap(_ sender: UITapGestureRecognizer) {
+        teleportView.translatesAutoresizingMaskIntoConstraints = false
+
+        if isTeleportVisible() {
+            hideTeleportView()
+        }
+        else {
+            showTeleportView()
+        }
+    }
+    
+    func showTeleportView() {
+        self.masterViewController.view.addSubview(teleportView)
+        self.masterViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|", options: NSLayoutFormatOptions.alignAllCenterY , metrics: nil, views: ["view": teleportView]))
+        self.masterViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]", options: NSLayoutFormatOptions.alignAllCenterX , metrics: nil, views: ["view": teleportView]))
+        
+        teleportView.switch.setOn(isSocketOn(), animated: false)
+    }
+    
+    func isSocketOn () -> Bool {
+        guard let _ = socket else {
+            return false
+        }
+        return socket.isConnected
+    }
+
+    func hideTeleportView() {
+        teleportView.removeFromSuperview()
+    }
+    
+    func isTeleportVisible() -> Bool {
+        if teleportView.isDescendant(of: self.masterViewController.view) {
+            return true
+        }
+        return false
     }
 }
 

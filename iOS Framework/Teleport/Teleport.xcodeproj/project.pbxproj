@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF08B3C11E8B1B8B0097F970 /* TeleportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF08B3C01E8B1B8B0097F970 /* TeleportView.xib */; };
+		CF08B3C31E8B1C950097F970 /* TeleportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08B3C21E8B1C950097F970 /* TeleportView.swift */; };
 		CF4CC99C1E8ABB4B00C454D0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CC99B1E8ABB4B00C454D0 /* Device.swift */; };
 		CFD34BBE1E89AFFF00FAF902 /* Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD34BB41E89AFFF00FAF902 /* Teleport.framework */; };
 		CFD34BC31E89AFFF00FAF902 /* TeleportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD34BC21E89AFFF00FAF902 /* TeleportTests.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF08B3C01E8B1B8B0097F970 /* TeleportView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TeleportView.xib; path = "Teleport View/TeleportView.xib"; sourceTree = "<group>"; };
+		CF08B3C21E8B1C950097F970 /* TeleportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeleportView.swift; path = "Teleport View/TeleportView.swift"; sourceTree = "<group>"; };
 		CF4CC99B1E8ABB4B00C454D0 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CFD34BB41E89AFFF00FAF902 /* Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD34BB71E89AFFF00FAF902 /* Teleport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teleport.h; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				CFD34BB81E89AFFF00FAF902 /* Info.plist */,
 				CFD34C0B1E89B17C00FAF902 /* Teleport.swift */,
 				CFD34C1E1E89B80000FAF902 /* Utility.swift */,
+				CF08B3C01E8B1B8B0097F970 /* TeleportView.xib */,
+				CF08B3C21E8B1C950097F970 /* TeleportView.swift */,
 			);
 			path = Teleport;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF08B3C11E8B1B8B0097F970 /* TeleportView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +232,7 @@
 				CFD34C1F1E89B80000FAF902 /* Utility.swift in Sources */,
 				CFD34C1C1E89B77800FAF902 /* SSLSecurity.swift in Sources */,
 				CFD34C1D1E89B77800FAF902 /* WebSocket.swift in Sources */,
+				CF08B3C31E8B1C950097F970 /* TeleportView.swift in Sources */,
 				CFD34C0C1E89B17C00FAF902 /* Teleport.swift in Sources */,
 				CF4CC99C1E8ABB4B00C454D0 /* Device.swift in Sources */,
 			);
