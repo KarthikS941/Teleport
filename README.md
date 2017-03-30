@@ -30,3 +30,46 @@ pod "TeleportiOS"
 ```
 #### Using Frameworks
 Download the iOS framework project from folder 'iOS Framework/Teleport'
+
+#### Usage - iOS Framework
+Inorder to log your message to local server, Teleport has to be added and needs to write logs.
+### Adding Teleport to View Controller
+Teleport view has to be added to a view controller where user can switch on and off the connection with local server.
+
+1. Import Teleport
+To import Teleport framework use the below line
+```
+import TeleportiOS
+```
+
+2. Initialize Teleport
+To initialize Teleport use the shared instance as Teleport is a singleton designed framework.
+```
+let teleport = TeleportiOS.sharedInstance
+```
+
+3. Write logs to local server 
+To write a log statement we use the below function call from framework.
+```
+Teleport.sharedInstance.writeLogWith(logType: .warning, message: "Incorrect Card Number")
+```
+
+| Arguments        | Description           |
+| ------------- |:-------------:|
+| .warning     | Log type |
+| "Incorrect Card Number"     | Log Message|
+
+### Log Types
+Teleport supports different types of logs,
+
+| Log Type        | Enum Used           |
+| ------------- |:-------------:| -----:|
+|Debug| .debug|
+|Verbose|.verbose|
+|Information|.info|
+|Warning|.warning|
+|Error|.error|
+
+
+
+
