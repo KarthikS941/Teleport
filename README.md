@@ -29,11 +29,11 @@ TeleportiOS is available through CocoaPods. To install it, simply add the follow
 pod "TeleportiOS"
 ```
 #### Using Frameworks
-Download the iOS framework project from folder 'iOS Framework/Teleport'
+Download the iOS framework project from folder **'iOS Framework/Teleport'**
 
-#### Usage - iOS Framework
+### Usage - iOS Framework
 Inorder to log your message to local server, Teleport has to be added and needs to write logs.
-### Adding Teleport to View Controller
+#### Adding Teleport to View Controller
 Teleport view has to be added to a view controller where user can switch on and off the connection with local server.
 
 1. Import Teleport
@@ -63,12 +63,12 @@ Teleport.sharedInstance.writeLogWith(logType: .warning, message: "Incorrect Card
 Teleport supports different types of logs,
 
 | Log Type        | Enum Used           |
-| ------------- |:-------------:| -----:|
-|Debug| .debug|
-|Verbose|.verbose|
-|Information|.info|
-|Warning|.warning|
-|Error|.error|
+| ------------- |:-------------:|
+| Debug         | .debug        |
+| Verbose       |.verbose       |
+| Information   |.info          |
+| Warning       |.warning       |
+| Error         |.error         |
 
 
 
