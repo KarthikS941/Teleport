@@ -64,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF9C06851E8C4609002E4DDD /* TeleportView */ = {
+			isa = PBXGroup;
+			children = (
+				CF08B3C01E8B1B8B0097F970 /* TeleportView.xib */,
+				CF08B3C21E8B1C950097F970 /* TeleportView.swift */,
+			);
+			name = TeleportView;
+			sourceTree = "<group>";
+		};
 		CFD34BAA1E89AFFF00FAF902 = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +100,7 @@
 				CFD34BB81E89AFFF00FAF902 /* Info.plist */,
 				CFD34C0B1E89B17C00FAF902 /* Teleport.swift */,
 				CFD34C1E1E89B80000FAF902 /* Utility.swift */,
-				CF08B3C01E8B1B8B0097F970 /* TeleportView.xib */,
-				CF08B3C21E8B1C950097F970 /* TeleportView.swift */,
+				CF9C06851E8C4609002E4DDD /* TeleportView */,
 			);
 			path = Teleport;
 			sourceTree = "<group>";
