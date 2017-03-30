@@ -10,11 +10,16 @@ Teleport contains two components
 2. iOS Framework that gets you logging started in your app.
 
 ### Installing the Desktop App
-Desktop Console App requires node js to be installed in your system.
-After installing node js, in the root folder 'Desktop App'.
+#### Prerequisites
+Node JS (https://nodejs.org/en/)
 
-1. Install all modules.
+#### Install Modules
 ```
 npm install
 ```
 
+#### Run the app
+```
+node teleport.js
+```
+![alt tag](https://raw.githubusercontent.com/KarthikSankar29/Teleport/master/res/desapp.png)
