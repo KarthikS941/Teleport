@@ -23,5 +23,5 @@ npm install
 node teleport.js
 ```
 ### Adding Framework to iOS App
-### Using Cocoapods
-### Using Frameworks
+#### Using Cocoapods
+#### Using Frameworks
