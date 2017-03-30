@@ -22,6 +22,7 @@ npm install
 ```
 node teleport.js
 ```
+---
 ### Adding Framework to iOS App
 #### Using Cocoapods
 TeleportiOS is available through CocoaPods. To install it, simply add the following line to your Podfile:
@@ -29,8 +30,8 @@ TeleportiOS is available through CocoaPods. To install it, simply add the follow
 pod "TeleportiOS"
 ```
 #### Using Frameworks
-Download the iOS framework project from folder **'iOS Framework/Teleport'**
-
+Download the iOS framework project from folder *'iOS Framework/Teleport'*
+---
 ### Usage - iOS Framework
 Inorder to log your message to local server, Teleport has to be added and needs to write logs.
 #### Adding Teleport to View Controller
@@ -56,20 +57,21 @@ Teleport.sharedInstance.writeLogWith(logType: .warning, message: "Incorrect Card
 
 | Arguments        | Description           |
 | ------------- |:-------------:|
-| .warning     | Log type |
-| "Incorrect Card Number"     | Log Message|
+| *.warning*     | Log type |
+| *"Incorrect Card Number"*     | Log Message|
 
-### Log Types
+#### Log Types
 Teleport supports different types of logs,
 
 | Log Type        | Enum Used           |
 | ------------- |:-------------:|
-| Debug         | .debug        |
-| Verbose       |.verbose       |
-| Information   |.info          |
-| Warning       |.warning       |
-| Error         |.error         |
-
+|   Debug         | .debug        |
+|   Verbose       | .verbose       |
+|   Information   | .info          |
+|   Warning       | .warning       |
+|   Error         | .error         |
+---
+### Demo
 
 
 
