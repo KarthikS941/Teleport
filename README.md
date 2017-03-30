@@ -1,6 +1,20 @@
 # Teleport
 ![alt tag](https://raw.githubusercontent.com/KarthikSankar29/Teleport/master/res/icon.png)
 Teleport - iOS Swift logging framework
-Teleport lets you to log from a mobile device to your local server running on your Mac or Windows.It contains two components 
+Logs have been vital part in program debugging. iOS NSLog and print statements provide the flexibility in printing logs in console if devices are connected to Mac. But we as developers have faced problems where we need remote logging. One usual approach that we used was to log into a file and get that file for further debugging a particular use case. But what about realtime debugging, Teleport lets you to see real time logs on your local Windows or Mac machine. Real time logs are printed in console as the app logs it for us.
+
+This helps in fixing bugs that developer is not able to trace using static logs.
+
+Teleport contains two components 
 1. Desktop Node JS App.
-2. iOS Framework that gets you the logging started in your app.
+2. iOS Framework that gets you logging started in your app.
+
+### Installing the Desktop App
+Desktop Console App requires node js to be installed in your system.
+After installing node js, in the root folder 'Desktop App'.
+
+1. Install all modules.
+```
+npm install
+```
+
