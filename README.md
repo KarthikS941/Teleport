@@ -22,4 +22,4 @@ npm install
 ```
 node teleport.js
 ```
-![alt tag](https://raw.githubusercontent.com/KarthikSankar29/Teleport/master/res/desapp.png)
+![alt tag](https://raw.githubusercontent.com/KarthikSankar29/Teleport/master/res/desapp.png){:height="481px" width="600px"}
