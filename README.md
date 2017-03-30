@@ -10,6 +10,7 @@ Teleport contains two components
 2. iOS Framework that gets you logging started in your app.
 
 ### Installing the Desktop App
+---
 #### Prerequisites
 Node JS (https://nodejs.org/en/)
 
@@ -22,8 +23,9 @@ npm install
 ```
 node teleport.js
 ```
----
+
 ### Adding Framework to iOS App
+---
 #### Using Cocoapods
 TeleportiOS is available through CocoaPods. To install it, simply add the following line to your Podfile:
 ```
@@ -31,8 +33,9 @@ pod "TeleportiOS"
 ```
 #### Using Frameworks
 Download the iOS framework project from folder *'iOS Framework/Teleport'*
----
+
 ### Usage - iOS Framework
+---
 Inorder to log your message to local server, Teleport has to be added and needs to write logs.
 #### Adding Teleport to View Controller
 Teleport view has to be added to a view controller where user can switch on and off the connection with local server.
@@ -70,8 +73,6 @@ Teleport supports different types of logs,
 |   Information   | .info          |
 |   Warning       | .warning       |
 |   Error         | .error         |
----
+
 ### Demo
-
-
-
+---
