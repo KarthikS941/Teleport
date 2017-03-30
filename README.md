@@ -24,4 +24,9 @@ node teleport.js
 ```
 ### Adding Framework to iOS App
 #### Using Cocoapods
+TeleportiOS is available through CocoaPods. To install it, simply add the following line to your Podfile:
+```
+pod "TeleportiOS"
+```
 #### Using Frameworks
+Download the iOS framework project from folder 'iOS Framework/Teleport'
